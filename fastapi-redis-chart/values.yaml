@@ -1,0 +1,17 @@
+api:
+  name: python-api
+  image: krishnamraju3369/fastapi-app:latest
+  imagePullPolicy: IfNotPresent
+  replicas: 1
+  containerPort: 8000
+  servicePort: 80
+
+redis:
+  image: redis:7
+  port: 6379
+  password: redis-123
+  pvcSize: 1Gi
+
+  # These two are now explicitly defined to match Helm-generated names
+  hostConfigName: fastapi-redis-app-redis-config
+  secretName: fastapi-redis-app-redis-secret
