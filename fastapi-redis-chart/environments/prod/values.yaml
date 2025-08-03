@@ -13,5 +13,5 @@ redis:
   pvcSize: 1Gi
 
   # These two are now explicitly defined to match Helm-generated names
-  hostConfigName: fastapi-redis-app-redis-config
+  hostConfigName: fastapi-app-redis-config
   secretName: fastapi-redis-app-redis-secret
