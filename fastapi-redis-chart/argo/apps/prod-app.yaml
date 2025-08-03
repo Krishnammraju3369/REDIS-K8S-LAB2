@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Krishnammraju3369/REDIS-K8S-LAB2.git
     targetRevision: HEAD
-    path: charts/fastapi-redis
+    path: fastapi-redis-chart/charts/fastapi-redis
     helm:
       valueFiles:
         - ../../environments/prod/values.yaml
