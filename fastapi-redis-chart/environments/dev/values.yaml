@@ -2,7 +2,7 @@ api:
   name: python-api
   image: krishnamraju3369/fastapi-app:latest
   imagePullPolicy: IfNotPresent
-  replicas: 2
+  replicas: 4
   containerPort: 8000
   servicePort: 80
 
